@@ -5,10 +5,12 @@ const store = useProductStore()
 <template>
 <header>
     <nav class="w-full h-14 bg-gray-100 flex justify-between items-center px-2">
+        <router-link to="/">
         <div class="flex items-center space-x-1">
             <img src="https://pinia.vuejs.org/logo.svg" alt="Pinia" class="w-10 h-10">
             <h1 class="font-bold text-base md:text-2xl">Store</h1>
         </div>
+         </router-link>
         <div>
             <div class="w-5.5 h-5.5 rounded-full text-center bg-red-500">
                 <span class="text-white text-sm">{{store.cartQuantity}}</span>
